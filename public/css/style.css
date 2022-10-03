@@ -1,0 +1,27 @@
+/* CSS Selectors */
+/* Etiqueta */
+body {
+    font-size: 1.2rem;
+    color: red;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+
+/* Clase */
+.negrita {
+    font-weight: bold;
+}
+.fondo-azul {
+    background-color: blue;
+}
+
+/* ID */
+#encabezado {
+    width: 900px;
+}
+#pie {
+    background-color: lightgray;
+    padding: 20px;
+}
