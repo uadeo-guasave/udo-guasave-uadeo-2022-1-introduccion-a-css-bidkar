@@ -3,10 +3,14 @@
 body {
     font-size: 1.2rem;
     color: red;
+    background-color: #666;
 }
 a {
     color: green;
     text-decoration: none;
+}
+p {
+    text-align: center;
 }
 
 /* Clase */
@@ -25,3 +29,4 @@ a {
     background-color: lightgray;
     padding: 20px;
 }
+
