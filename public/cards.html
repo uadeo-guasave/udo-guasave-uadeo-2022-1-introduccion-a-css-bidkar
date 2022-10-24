@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        /* Reset CSS */
+        figure,p,h1,h2,h3,h4,h5,h6,body,img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        /* End Reset CSS */
+        body {
+            background-color: #666;
+        }
+        .container {
+            width: 980px;
+            margin: 0 auto;
+            /* background-color: coral; */
+        }
+        .card {
+            width: 300px;
+            background-color: #eff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px #333;
+        }
+        .card-image img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-title,.card-text {
+            padding: 5px 10px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cards</h2>
+    <div class="container">
+        <div class="cards">
+            <!-- .card>img+h2+p -->
+            <div class="card">
+                <figure class="card-image">
+                    <img src="images/image01.jpg" alt="imagen">
+                </figure>
+                <h2 class="card-title">titulo de la tarjeta</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, inventore.
+                </p>
+            </div>
+            <div class="card">
+                <figure class="card-image">
+                    <img src="images/image01.jpg" alt="imagen">
+                </figure>
+                <h2 class="card-title">titulo de la tarjeta</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, inventore.
+                </p>
+            </div>
+            <div class="card">
+                <figure class="card-image">
+                    <img src="images/image01.jpg" alt="imagen">
+                </figure>
+                <h2 class="card-title">titulo de la tarjeta</h2>
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, inventore.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
