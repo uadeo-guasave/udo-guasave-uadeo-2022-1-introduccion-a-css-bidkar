@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body {
+            font-family: Roboto;
+        }
+        .container {
+            padding: 0 20px;
+        }
+        .titulo {
+            margin: 10px 0;
+        }
         #encabezado {
             padding: 10px 12px 0;
         }
@@ -18,18 +30,41 @@
         .nombre {
             display: none;
         }
-        @media (min-width:700px) {
+        @media (min-width:720px) {
             .logo>img {
                 width: 80%;
             }
         }
-        @media (min-width:900px) {
+        @media (min-width:980px) {
             .logo>img {
                 width: 500px;
             }
             .nombre {
                 display: block;
             }
+            .container {
+                width: 980px;
+                margin: 0 auto;
+            }
+        }
+        #pie {
+            background-color: #eee;
+            padding: 30px 0;
+            font-size: .8rem;
+            color: #777;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 200px;
+        }
+        .pie-titulo {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #principal>.titulo {
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 10px 0;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -50,7 +85,57 @@
             <i class="fa-solid fa-house"></i> / Transparencia
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main id="principal">
+        <h2 class="titulo">Transparencia</h2>
+        <div class="notas">
+            <article class="nota">
+                <header class="nota-encabezado">
+                    <h3>
+                        Informe de la Jornada de Transparencia y Rendición de Cuentas 2021-2022
+                    </h3>
+                    <picture>
+                        <img src="./images/cetis108-jornada-transparencia-2022.jpeg" alt="jornada">
+                    </picture>
+                </header>
+                <div class="nota-contenido">
+                    <p>
+                        El día 13 de septiembre de 2022 a las 12:00 horas, se llevó a cabo con éxito la Jornada de Transparencia y Rendición de Cuentas 2021-2022 del Centro de Estudios Tecnológicos, industrial y de servicios No. 108 "Gral. Gabriel Leyva Solano", con la participación de maestros, alumnos, padres de familia, autoridades locales, representantes sindicales, empresarios y miembros de la comunidad en general.
+                    </p>
+                    <p>
+                        El director del plantel, el Ing. Zamar Ofir Palazuelos Humares dió a conocer a los asistentes los resultados del ciclo escolar 2021-2022 en materia de:
+                    </p>
+                    <!-- Unordered list -->
+                    <ul>
+                        <li>Situación académica</li>
+                        <li>Personal docente, directivo y administrativo</li>
+                        <li>Gestión financiera y administrativa del plantel</li>
+                        <li>Infraestructura, equipamiento y conectividad</li>
+                    </ul>
+                </div>
+                <div class="nota-accion">
+                    <!-- anchor -->
+                    <a href="#" class="button">
+                        Ver informe
+                    </a>
+                </div>
+                <div class="nota-fecha">
+                    <p>
+                        Publicado el 14 de septiembre de 2022
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="enlaces"></div>
+    </main>
+    <footer id="pie">
+        <div class="container">
+            <p class="pie-titulo">
+                Centro de Estudios Tecnológicos industrial y de servicios No. 108
+            </p>
+            <p>
+                Zona Industrial S/N, Carretera a Los Angeles del Triunfo, CP. 81101, Guasave, Sinaloa, México - Tel. (687) 87 234 07
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
