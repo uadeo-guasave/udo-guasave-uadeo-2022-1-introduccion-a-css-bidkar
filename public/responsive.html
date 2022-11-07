@@ -46,6 +46,23 @@
                 width: 980px;
                 margin: 0 auto;
             }
+            .flex {
+                display: flex;
+                gap: 20px;
+            }
+            .notas {
+                flex: 2;
+            }
+            .enlaces {
+                flex: 1;
+            }
+            .titulo {
+                display: flex;
+                gap: 50px;
+            }
+            .titulo>.nombre {
+                text-align: right;
+            }
         }
         #pie {
             background-color: #eee;
@@ -97,11 +114,43 @@
         .nota-fecha {
             margin-bottom: 20px;
         }
+        .enlaces {
+            border: 1px solid lightgray;
+            /* padding: 10px; */
+            margin-bottom: 20px;
+        }
+        .enlaces>h2 {
+            background-color: #10312b;
+            padding: 10px;
+            color: white;
+            font-weight: 300;
+            font-size: 1.3rem;
+        }
+        .enlaces>.items {
+            padding: 10px;
+        }
+        .enlaces>.items>.categoria {
+            text-transform: uppercase;
+            color: #999;
+            letter-spacing: .1rem;
+            padding: 5px 0;
+            font-size: .9rem;
+        }
+        .enlaces>.items>a {
+            display: block;
+            padding: 5px 0 5px 10px;/*up right bottom left*/
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+        .enlaces>.items>a:hover {
+            background-color: #eee;
+        }
     </style>
 </head>
 <body>
     <!-- Mobile First -->
-    <header id="encabezado">
+    <header id="encabezado" class="container">
         <div class="titulo">
             <div class="logo">
                 <img src="images/sep-dgeti.png" alt="Logo">
@@ -118,46 +167,59 @@
     </header>
     <main id="principal" class="container">
         <h2 class="titulo">Transparencia</h2>
-        <div class="notas">
-            <article class="nota">
-                <header class="nota-encabezado">
-                    <h3>
-                        Informe de la Jornada de Transparencia y Rendición de Cuentas 2021-2022
-                    </h3>
-                    <picture>
-                        <img src="./images/cetis108-jornada-transparencia-2022.jpeg" alt="jornada">
-                    </picture>
-                </header>
-                <div class="nota-contenido">
-                    <p>
-                        El día 13 de septiembre de 2022 a las 12:00 horas, se llevó a cabo con éxito la Jornada de Transparencia y Rendición de Cuentas 2021-2022 del Centro de Estudios Tecnológicos, industrial y de servicios No. 108 "Gral. Gabriel Leyva Solano", con la participación de maestros, alumnos, padres de familia, autoridades locales, representantes sindicales, empresarios y miembros de la comunidad en general.
-                    </p>
-                    <p>
-                        El director del plantel, el Ing. Zamar Ofir Palazuelos Humares dió a conocer a los asistentes los resultados del ciclo escolar 2021-2022 en materia de:
-                    </p>
-                    <!-- Unordered list -->
-                    <ul>
-                        <li>Situación académica</li>
-                        <li>Personal docente, directivo y administrativo</li>
-                        <li>Gestión financiera y administrativa del plantel</li>
-                        <li>Infraestructura, equipamiento y conectividad</li>
-                    </ul>
+        <div class="flex">
+            <div class="notas">
+                <article class="nota">
+                    <header class="nota-encabezado">
+                        <h3>
+                            Informe de la Jornada de Transparencia y Rendición de Cuentas 2021-2022
+                        </h3>
+                        <picture>
+                            <img src="./images/cetis108-jornada-transparencia-2022.jpeg" alt="jornada">
+                        </picture>
+                    </header>
+                    <div class="nota-contenido">
+                        <p>
+                            El día 13 de septiembre de 2022 a las 12:00 horas, se llevó a cabo con éxito la Jornada de Transparencia y Rendición de Cuentas 2021-2022 del Centro de Estudios Tecnológicos, industrial y de servicios No. 108 "Gral. Gabriel Leyva Solano", con la participación de maestros, alumnos, padres de familia, autoridades locales, representantes sindicales, empresarios y miembros de la comunidad en general.
+                        </p>
+                        <p>
+                            El director del plantel, el Ing. Zamar Ofir Palazuelos Humares dió a conocer a los asistentes los resultados del ciclo escolar 2021-2022 en materia de:
+                        </p>
+                        <!-- Unordered list -->
+                        <ul>
+                            <li>Situación académica</li>
+                            <li>Personal docente, directivo y administrativo</li>
+                            <li>Gestión financiera y administrativa del plantel</li>
+                            <li>Infraestructura, equipamiento y conectividad</li>
+                        </ul>
+                    </div>
+                    <div class="nota-accion">
+                        <!-- anchor -->
+                        <a href="#" class="button">
+                            Ver informe
+                        </a>
+                    </div>
+                    <div class="nota-fecha">
+                        <p>
+                            Publicado el 14 de septiembre de 2022
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="enlaces">
+                <h2>Enlaces</h2>
+                <div class="items">
+                    <div class="categoria">
+                        avisos de privacidad
+                    </div>
+                    <a href="#">Simplificado</a>
+                    <a href="#">Integral</a>
+                    <div class="categoria">
+                        normatividad
+                    </div>
+                    <a href="#">Código de ética</a>
                 </div>
-                <div class="nota-accion">
-                    <!-- anchor -->
-                    <a href="#" class="button">
-                        Ver informe
-                    </a>
-                </div>
-                <div class="nota-fecha">
-                    <p>
-                        Publicado el 14 de septiembre de 2022
-                    </p>
-                </div>
-            </article>
-        </div>
-        <div class="enlaces">
-            
+            </div>
         </div>
     </main>
     <footer id="pie">
